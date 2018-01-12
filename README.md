@@ -39,14 +39,13 @@ sudo touch /etc/rabbitmq/cacert.pem
 sudo service rabbitmq-server restart
 ```
 
-# Install Java
+# Install Java and Maven
 ```
-sudo apt-get install -y openjdk-8-jre-headless
+sudo apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless maven
 ```
 
 # Build and run test client
 ```
-sudo apt-get install -y maven
 git clone https://github.com/dimas/rabbitmq-broker-tls-issue-1474
 cd rabbitmq-broker-tls-issue-1474
 
